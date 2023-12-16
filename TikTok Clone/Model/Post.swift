@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Post : Codable, Identifiable {
+    let id : String
+    let videoURL : String
+}

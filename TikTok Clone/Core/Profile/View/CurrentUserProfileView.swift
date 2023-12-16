@@ -12,9 +12,15 @@ struct CurrentUserProfileView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 2) {
-                    
+                    //profile header
+                    ProfileHeaderView()
+                    //post grid
+                    PostGridView()
                 }
+                .padding(.top)
             }
+            .navigationTitle("ikbaldemirdoven")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
