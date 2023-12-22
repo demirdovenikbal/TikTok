@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct RegistrationView: View {
+struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @StateObject var viewModel = LoginViewModel(authService: AuthService())
     var body: some View {
         NavigationStack {
             VStack {
@@ -41,7 +42,7 @@ struct RegistrationView: View {
                 }
                 //login button
                 Button {
-                    print("Debug: Login")
+                    Task { await viewModel.login(email: email, password: password) }
                 } label: {
                     Text("Login")
                         .foregroundStyle(.white)
@@ -50,13 +51,16 @@ struct RegistrationView: View {
                         .frame(width: 350, height: 44)
                         .background(.pink)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .padding(.vertical)
                 }
+                .padding(.vertical)
+                .disabled(!formIsValid)
+                .opacity(formIsValid ? 1 : 0.7)
                 Spacer()
                 //go to sign up
                 Divider()
                 NavigationLink {
                     RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account?")
@@ -72,6 +76,14 @@ struct RegistrationView: View {
     }
 }
 
+//MARK: - Authentication Protocol
+
+extension LoginView : AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty && email.contains("@") && !password.isEmpty
+    }
+}
+
 #Preview {
-    RegistrationView()
+    LoginView()
 }
