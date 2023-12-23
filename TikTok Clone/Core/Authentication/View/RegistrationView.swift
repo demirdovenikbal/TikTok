@@ -13,7 +13,12 @@ struct RegistrationView: View {
     @State private var password = ""
     @State private var fullname = ""
     @State private var username = ""
-    @StateObject var viewModel = RegistrationViewModel(authService: AuthService())
+    @StateObject var viewModel : RegistrationViewModel
+    private let authService : AuthService
+    init(authService : AuthService) {
+        self.authService = authService
+        self._viewModel = StateObject(wrappedValue: RegistrationViewModel(authService: authService))
+    }
     var body: some View {
         VStack {
             Spacer()
@@ -87,5 +92,5 @@ extension RegistrationView : AuthenticationFormProtocol {
 }
 
 #Preview {
-    RegistrationView()
+    RegistrationView(authService: AuthService())
 }
