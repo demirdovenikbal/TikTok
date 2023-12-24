@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @State private var users = DeveloperPreview.users
+    @State private var searchText = ""
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing : 16) {
-                    ForEach(0..<20) {
+                    ForEach(users) {
                         user in
-                        UserCell()
+                        UserCell(user: user )
                             .padding(.horizontal)
                     }
+                    .searchable(text: $searchText)
                 }
             }
             .navigationTitle("Explore")
