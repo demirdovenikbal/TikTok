@@ -39,6 +39,11 @@
 		A16868A52B32B8C700C22522 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A16868A42B32B8C700C22522 /* FirebaseAnalyticsSwift */; };
 		A16868A72B32B8C700C22522 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A16868A62B32B8C700C22522 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		A16868A92B32B8C700C22522 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A16868A82B32B8C700C22522 /* FirebaseAppCheck */; };
+		A1D775D22B37DB85006DBFCB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D775D12B37DB85006DBFCB /* User.swift */; };
+		A1D775D52B37DC36006DBFCB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D775D42B37DC36006DBFCB /* UserService.swift */; };
+		A1D775D72B37F09A006DBFCB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1D775D62B37F09A006DBFCB /* FirebaseFirestoreSwift */; };
+		A1D775D92B3815AA006DBFCB /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D775D82B3815AA006DBFCB /* PreviewProvider.swift */; };
+		A1D775DD2B3817F5006DBFCB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D775DC2B3817F5006DBFCB /* SearchViewModel.swift */; };
 		A1DAEE0C2B26E716007332D5 /* TikTok_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAEE0B2B26E716007332D5 /* TikTok_CloneApp.swift */; };
 		A1DAEE0E2B26E716007332D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DAEE0D2B26E716007332D5 /* ContentView.swift */; };
 		A1DAEE102B26E718007332D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DAEE0F2B26E718007332D5 /* Assets.xcassets */; };
@@ -69,6 +74,10 @@
 		A16868992B315B3A00C22522 /* StandardTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextModifier.swift; sourceTree = "<group>"; };
 		A168689B2B31688B00C22522 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		A168689D2B32B84000C22522 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1D775D12B37DB85006DBFCB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1D775D42B37DC36006DBFCB /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A1D775D82B3815AA006DBFCB /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		A1D775DC2B3817F5006DBFCB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A1DAEE082B26E716007332D5 /* TikTok Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TikTok Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DAEE0B2B26E716007332D5 /* TikTok_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTok_CloneApp.swift; sourceTree = "<group>"; };
 		A1DAEE0D2B26E716007332D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 				A15AB64D2B340AC30085B974 /* FirebaseStorage in Frameworks */,
 				A15AB6472B340A9C0085B974 /* FirebaseAuth in Frameworks */,
 				A16868A12B32B8C700C22522 /* FirebaseAnalytics in Frameworks */,
+				A1D775D72B37F09A006DBFCB /* FirebaseFirestoreSwift in Frameworks */,
 				A16868A32B32B8C700C22522 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				A15AB64B2B340AB10085B974 /* FirebaseFirestore in Frameworks */,
 				A16868A92B32B8C700C22522 /* FirebaseAppCheck in Frameworks */,
@@ -202,6 +212,23 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		A1D775DA2B3817E2006DBFCB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1D775DC2B3817F5006DBFCB /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1D775DB2B3817E8006DBFCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A119AE552B2AC94B00DBCE61 /* ExploreView.swift */,
+				A119AE572B2AC95D00DBCE61 /* UserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1DAEDFF2B26E716007332D5 = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +281,7 @@
 		A1DAEE1B2B26E82B007332D5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A1D775D42B37DC36006DBFCB /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -262,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				A16868862B2D800100C22522 /* Post.swift */,
+				A1D775D12B37DB85006DBFCB /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +298,7 @@
 		A1DAEE1D2B26E82F007332D5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A1D775D82B3815AA006DBFCB /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,8 +346,8 @@
 		A1DAEE222B26E896007332D5 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				A119AE552B2AC94B00DBCE61 /* ExploreView.swift */,
-				A119AE572B2AC95D00DBCE61 /* UserCell.swift */,
+				A1D775DB2B3817E8006DBFCB /* View */,
+				A1D775DA2B3817E2006DBFCB /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -412,6 +442,7 @@
 				A15AB6482B340AA80085B974 /* FirebaseDatabaseSwift */,
 				A15AB64A2B340AB10085B974 /* FirebaseFirestore */,
 				A15AB64C2B340AC30085B974 /* FirebaseStorage */,
+				A1D775D62B37F09A006DBFCB /* FirebaseFirestoreSwift */,
 			);
 			productName = "TikTok Clone";
 			productReference = A1DAEE082B26E716007332D5 /* TikTok Clone.app */;
@@ -474,8 +505,11 @@
 				A14C9AE82B26FCA200DD98DE /* FeedView.swift in Sources */,
 				A168688E2B2D8E4000C22522 /* CustomVideoPlayer.swift in Sources */,
 				A15AB6422B3405640085B974 /* LoginViewModel.swift in Sources */,
+				A1D775D22B37DB85006DBFCB /* User.swift in Sources */,
 				A119AE542B297A8900DBCE61 /* FeedCell.swift in Sources */,
 				A16868982B30279100C22522 /* LoginView.swift in Sources */,
+				A1D775D52B37DC36006DBFCB /* UserService.swift in Sources */,
+				A1D775D92B3815AA006DBFCB /* PreviewProvider.swift in Sources */,
 				A119AE602B2C2C1300DBCE61 /* ProfileHeaderView.swift in Sources */,
 				A119AE662B2C2F0300DBCE61 /* UserStatView.swift in Sources */,
 				A15AB6402B34048C0085B974 /* AuthService.swift in Sources */,
@@ -490,6 +524,7 @@
 				A16868952B30278400C22522 /* RegistrationView.swift in Sources */,
 				A14C9AE62B26F49300DD98DE /* MainTabView.swift in Sources */,
 				A168689A2B315B3A00C22522 /* StandardTextModifier.swift in Sources */,
+				A1D775DD2B3817F5006DBFCB /* SearchViewModel.swift in Sources */,
 				A119AE582B2AC95D00DBCE61 /* UserCell.swift in Sources */,
 				A119AE622B2C2C1E00DBCE61 /* PostGridView.swift in Sources */,
 				A119AE5E2B2C2B7900DBCE61 /* CurrentUserProfileView.swift in Sources */,
@@ -757,6 +792,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A168689F2B32B8C700C22522 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAppCheck;
+		};
+		A1D775D62B37F09A006DBFCB /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A168689F2B32B8C700C22522 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

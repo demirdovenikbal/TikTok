@@ -6,3 +6,21 @@
 //
 
 import Foundation
+
+class SearchViewModel : ObservableObject {
+    @Published var users = [User]()
+    private let userService : UserService
+    init(userService : UserService) {
+        self.userService = userService
+        Task { await fetchUsers() }
+    }
+    
+    func fetchUsers() async {
+        do {
+            self.users = try await userService.fetchUsers()
+        } catch {
+            print("Debug failed to fetch users with error \(error.localizedDescription)")
+        }
+    }
+    
+}
