@@ -13,7 +13,7 @@ struct UserService {
     func uploadUserData(user : User) async throws {
         do {
             let userData = try Firestore.Encoder().encode(user) //encoding the object to upload it to Firestore
-            try await Firestore.firestore().collection("users").document(user.id).setData(userData) //uploading the object to the Firestore
+            try await Firestore.firestore().collection("users").document(user.id).setData(userData) //uploading the object to the Firestore...
         } catch {
             throw error
         }

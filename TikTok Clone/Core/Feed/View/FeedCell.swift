@@ -23,7 +23,7 @@ struct FeedCell: View {
                 Spacer()
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading) {
-                        Text("ikbaldemirdoven")
+                        Text("ikbaldemirdowen")
                             .fontWeight(.semibold)
                         Text("Prepare for take off !!!")
                     }
