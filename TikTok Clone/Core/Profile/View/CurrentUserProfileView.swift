@@ -14,7 +14,7 @@ struct CurrentUserProfileView: View {
             ScrollView {
                 LazyVStack(spacing: 2) {
                     //profile header
-                    ProfileHeaderView()
+                    ProfileHeaderView(user: DeveloperPreview.users[0])
                     //post grid
                     PostGridView()
                 }

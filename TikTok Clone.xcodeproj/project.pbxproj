@@ -39,6 +39,7 @@
 		A16868A52B32B8C700C22522 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A16868A42B32B8C700C22522 /* FirebaseAnalyticsSwift */; };
 		A16868A72B32B8C700C22522 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A16868A62B32B8C700C22522 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		A16868A92B32B8C700C22522 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A16868A82B32B8C700C22522 /* FirebaseAppCheck */; };
+		A1A1F34D2B493C0300D26AD5 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1F34C2B493C0300D26AD5 /* UserProfileView.swift */; };
 		A1D775D22B37DB85006DBFCB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D775D12B37DB85006DBFCB /* User.swift */; };
 		A1D775D52B37DC36006DBFCB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D775D42B37DC36006DBFCB /* UserService.swift */; };
 		A1D775D72B37F09A006DBFCB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1D775D62B37F09A006DBFCB /* FirebaseFirestoreSwift */; };
@@ -74,6 +75,7 @@
 		A16868992B315B3A00C22522 /* StandardTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextModifier.swift; sourceTree = "<group>"; };
 		A168689B2B31688B00C22522 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		A168689D2B32B84000C22522 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1A1F34C2B493C0300D26AD5 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		A1D775D12B37DB85006DBFCB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A1D775D42B37DC36006DBFCB /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A1D775D82B3815AA006DBFCB /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A119AE5D2B2C2B7900DBCE61 /* CurrentUserProfileView.swift */,
+				A1A1F34C2B493C0300D26AD5 /* UserProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				A1D775DD2B3817F5006DBFCB /* SearchViewModel.swift in Sources */,
 				A119AE582B2AC95D00DBCE61 /* UserCell.swift in Sources */,
 				A119AE622B2C2C1E00DBCE61 /* PostGridView.swift in Sources */,
+				A1A1F34D2B493C0300D26AD5 /* UserProfileView.swift in Sources */,
 				A119AE5E2B2C2B7900DBCE61 /* CurrentUserProfileView.swift in Sources */,
 				A119AE5A2B2ACB9600DBCE61 /* NotificationsView.swift in Sources */,
 				A119AE5C2B2ACB9D00DBCE61 /* NotificationView.swift in Sources */,

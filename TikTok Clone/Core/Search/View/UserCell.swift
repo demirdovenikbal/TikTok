@@ -16,12 +16,13 @@ struct UserCell: View {
                 .frame(width: 48, height: 48)
                 .foregroundStyle(Color(.systemGray3))
             VStack(alignment: .leading) {
-                Text("\(user.username)")
+                Text(user.username)
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                Text("\(user.fullname)")
+                Text(user.fullname)
                     .font(.footnote)
             }
+            .foregroundStyle(.black)
             Spacer()
         }
     }
