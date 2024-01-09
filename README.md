@@ -17,9 +17,9 @@ Technologies Utilized: <br>
 <br>
 Swift <br>
 SwiftUI <br>
+Combine <br>
 AVFoundation for video processing <br>
 Firebase for user authentication and real-time updates <br>
 <br>
 This project was an exciting journey that deepened my understanding of mobile app development, and I'm eager to apply these experiences to future innovative projects. <br>
 <br>
-Skills: AVFoundation · Combine · Swift (Programming Language) · SwiftUI · Firebase <br>
