@@ -8,18 +8,19 @@ User Authentication: Ensured a secure and seamless login experience, prioritizin
 Video Sharing: Empowered users to share short-form videos effortlessly. <br>
 Engaging Discover Feed: Implemented an algorithmic feed for content discovery, enhancing user engagement and personalization. <br>
 Real-time Interactions: Integrated real-time features like likes, comments, and notifications to create a lively and interactive user community. <br>
-Development Highlights:
-Navigating challenges in video processing, optimizing performance for smooth playback, and creating an intuitive interface for content creation were pivotal aspects of this project. Overcoming these challenges expanded my expertise in iOS development and enriched my problem-solving skills.
-
-Technologies Utilized:
-
-Swift
-SwiftUI
-AVFoundation for video processing
-Firebase for user authentication and real-time updates
-
+Development Highlights: <br>
+Navigating challenges in video processing, optimizing performance for smooth playback, and creating an intuitive interface for content creation were pivotal aspects of this project. Overcoming these challenges expanded my expertise in iOS development and enriched my problem-solving skills. <br>
+<br>
+Technologies Utilized: <br>
+<br>
+Swift <br>
+SwiftUI <br>
+AVFoundation for video processing <br>
+Firebase for user authentication and real-time updates <br>
+<br>
 This project was an exciting journey that deepened my understanding of mobile app development, and I'm eager to apply these experiences to future innovative projects.
-
+<br>
 Feel free to explore the GitHub repository for an in-depth look at the code and development process.
-
+<br>
 Skills: AVFoundation · Combine · Swift (Programming Language) · SwiftUI · Firebase
+<br
