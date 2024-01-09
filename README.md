@@ -20,9 +20,6 @@ SwiftUI <br>
 AVFoundation for video processing <br>
 Firebase for user authentication and real-time updates <br>
 <br>
-This project was an exciting journey that deepened my understanding of mobile app development, and I'm eager to apply these experiences to future innovative projects.
+This project was an exciting journey that deepened my understanding of mobile app development, and I'm eager to apply these experiences to future innovative projects. <br>
 <br>
-Feel free to explore the GitHub repository for an in-depth look at the code and development process.
-<br>
-Skills: AVFoundation · Combine · Swift (Programming Language) · SwiftUI · Firebase
-<br
+Skills: AVFoundation · Combine · Swift (Programming Language) · SwiftUI · Firebase <br>
