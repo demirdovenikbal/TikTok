@@ -8,7 +8,9 @@ User Authentication: Ensured a secure and seamless login experience, prioritizin
 Video Sharing: Empowered users to share short-form videos effortlessly. <br>
 Engaging Discover Feed: Implemented an algorithmic feed for content discovery, enhancing user engagement and personalization. <br>
 Real-time Interactions: Integrated real-time features like likes, comments, and notifications to create a lively and interactive user community. <br>
+<br>
 Development Highlights: <br>
+<br>
 Navigating challenges in video processing, optimizing performance for smooth playback, and creating an intuitive interface for content creation were pivotal aspects of this project. Overcoming these challenges expanded my expertise in iOS development and enriched my problem-solving skills. <br>
 <br>
 Technologies Utilized: <br>
